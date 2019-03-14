@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+h1{
+            
+            text-align: center;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif ;
+            letter-spacing: 6px;
+            font-size: 40px;
+            color: #1231b8;
+            padding-top: 60px;
+        }
+
+        h2{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            color: #0b1643;
+            margin: 20px 0px 0px 18px;
+        }
+
+        span:before{
+            content: '';            
+            animation: rot infinite 12s;
+             
+        }
+
+        @keyframes rot{
+            0%{
+                content: 'Tenho 20 anos!';
+            }
+            40%{
+                content: 'Natural de Poços de Caldas, MG';
+            }
+            60%{
+                content: 'Moro na Rua dos fracos, nº 0';
+            }
+            100%{
+                content: 'Curso o 5º Período de Engenharia de Computação!';
+            }
+            
+        }
+
+        img.displayed{
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        
+
+        /*Formatação do Menu*/
+        
+        .menu{
+            display: block;
+            padding: 0; 
+            
+        }
+
+        .menu ul{
+            list-style: none;
+            text-transform: uppercase;   
+            position: absolute;
+            padding: 0;  
+            top: 0px;
+            left: 335px;   
+             
+        }
+
+        .menu ul ul{
+            display: none;
+            text-align: center;
+            padding: 0px;
+            left: 450px;
+            top: 35px;  
+
+        }
+
+        .menu ul ul li{
+            right: 20px;
+            padding: 10px;
+            
+        }
+
+        
+
+        .menu ul li:hover > ul{
+            display:inline;
+            margin: 0px;
+            padding: 10px; 
+                      
+        }
+
+        .menu li{
+            color: black;
+            display: inline-block;
+            background-color: #b0f3ed;
+            opacity: 0.7;
+            padding : 10px;           
+            margin: 5px;
+            border-radius: 10px 20px 10px;
+            border: black 0.5px solid;
+            text-align: center;
+           
+            }
+
+        .menu li:hover{
+            background-color:#027776;
+            transition: 1.5s;
+            opacity: .87;
+        }
+
+        .menu a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu a:hover{
+            
+            padding: 8px;
+        } 
+
+        div#interface{
+            width: 1200px;
+            height: 600px;
+            margin: 80px auto -10px auto;
+            box-shadow: 0px 10px 10px black;
+            
+        }
+
+        
